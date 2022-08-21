@@ -41,33 +41,35 @@
     </header>
 
     <main class="mt-10">
-      <section class="w-9/12 mx-auto flex gap-x-6">
-        <div class="grid grid-cols-4 gap-6 grow">
+      <section class="container mx-auto flex gap-x-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-6 grow">
           <!-- Right side bar start  -->
-          <div class="row-start-1 col-start-4">
+          <div class="row-start-1 md:col-start-3 xl:col-start-4">
             <div class="text-white bg-black pl-5 pt-6 pb-9 pr-8 h-full">
               <h3 class="text-2xl font-semibold text-center">Selected - V</h3>
               <ol
                 id="selected-players"
                 class="list-decimal flex flex-col gap-2 mt-6 ml-8"
-              >
-            </ol>
+              ></ol>
             </div>
           </div>
           <!-- Calculate Budget  -->
-          <div class="row-start-2 col-start-4 row-span-6">
+           <div
+             class="row-start-2 col-start-1 md:col-start-3 row-span-6 xl:col-start-4"
+          >
             <div class="text-white bg-black px-6 pt-6 pb-9">
               <h3 class="text-2xl font-semibold text-center">Budget</h3>
 
               <div class="mt-6">
-                <label
+                <label class=""
                   >Per Player
-                  <input
-                    class="text-white w-32 ml-3 bg-transparent border border-gray-600 py-1 px-2"
+                  <input id="per-player-cost-field"
+                    class="block lg:inline text-white lg:w-32 lg:ml-3 bg-transparent border border-gray-600 py-1 mt-2 px-2"
                     type="number"
+                    placeholder="Cost"
                   />
                 </label>
-                <button
+                <button id="btn-player-cost"
                   class="text-white text-base font-bold bg-sky-800 py-2 w-full mt-5 hover:bg-orange-700"
                 >
                   Calculate
@@ -78,27 +80,28 @@
               </div>
 
               <div class="mt-7">
-                <label
+                <label class="block"
                   >Manager
-                  <input
-                    class="text-white w-32 ml-3 bg-transparent border border-gray-600 py-1 px-2"
+                  <input id="manager-cost-field"
+                    class="block lg:inline text-white lg:w-32 lg:ml-3 bg-transparent border border-gray-600 py-1 px-2 mt-2"
                     type="number"
                   />
                 </label>
-                <label
+                <label class="block"
                   >Coach
-                  <input
-                    class="text-white w-32 ml-8 mt-4 bg-transparent border border-gray-600 py-1 px-2"
+                  <input id="coach-cost-field"
+                    class="block lg:inline text-white lg:w-32 lg:ml-8 mt-2 xxl:mt-4 bg-transparent border border-gray-600 py-1 px-2"
                     type="number"
                   />
                 </label>
-                <button
+                <button id="btn-others-cost"
                   class="text-white text-base font-bold bg-sky-800 py-2 w-full mt-5 hover:bg-orange-700"
                 >
                   Calculate
                 </button>
                 <h3 class="mt-4">
-                  Total <span class="ml-32 text-red-600 font-bold">$</span
+                  Total
+                  <span class="ml-10 lg:ml-32 text-red-600 font-bold">$</span
                   ><span class="font-bold text-red-600">1000</span>
                 </h3>
               </div>
@@ -146,7 +149,7 @@
           <div class="text-center border border-gray-600">
             <img class="w-full mx-auto" src="./image/messi.png" alt="" />
             <div class="p-5">
-              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <h2 class="text-white text-2xl font-extrabold">Rolando</h2>
               <div class="text-neutral-400 pt-2">
                 <span>36 Goals . </span>
                 <span>120 Assist</span>

@@ -4,7 +4,7 @@ document.querySelectorAll(".select-btn").forEach(function (btn) {
 
     const selectedPlayers = document.getElementById("selected-players");
     const selectedPlayerParent = selectedPlayers.children;
-      
+
     if (selectedPlayerParent.length === 5) {
       alert("You can not add more five Players");
       return;
@@ -16,7 +16,18 @@ document.querySelectorAll(".select-btn").forEach(function (btn) {
     const disabled = this.parentElement.children[2];
     disabled.setAttribute("disabled", "");
     disabled.classList.add("disabled");
-
-    console.log(selectedPlayerParent);
   });
 });
+
+document
+  .getElementById("btn-player-cost")
+  .addEventListener("click", function () {
+    const selectedPlayers = document.getElementById("selected-players");
+      const selectedPlayer = selectedPlayers.children.length;
+
+    const playerCostField = getInputValueById("per-player-cost-field") * selectedPlayer;
+
+    console.log(playerCostField);
+  });
+
+// console.log(selectedPlayerParent);
