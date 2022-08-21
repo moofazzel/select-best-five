@@ -13,29 +13,260 @@
       rel="stylesheet"
     />
     <!-- Main css  -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
     <!-- Tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-zinc-900">
     <header>
-        <div class="bg-black flex justify-center items-center">
-            <div>
-                <img src="./image/bg-left.png" alt="">
-            </div>
-            <div class="text-center">
-                <h1 class="text-orange-600 text-7xl font-Berkshire bg-hero-pattern">Select Your Best Five</h1>
-                <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
-            <div>
-                <img src="./image/ball.svg" alt="">
-            </div>
+      <div class="bg-black flex justify-center items-center">
+        <div>
+          <img src="./image/bg-left.png" alt="" />
         </div>
+        <div class="text-center">
+          <h1 class="text-orange-600 text-6xl font-Berkshire bg-hero-pattern">
+            Select Your Best Five
+          </h1>
+          <p class="text-white">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <div>
+          <img src="./image/Card-psg.svg" alt="" />
+          <img src="./image/ball.svg" alt="" />
+        </div>
+      </div>
     </header>
+
+    <main class="mt-10">
+      <section class="w-9/12 mx-auto flex gap-x-6">
+        <div class="grid grid-cols-4 gap-6 grow">
+          <!-- Right side bar start  -->
+          <div class="row-start-1 col-start-4">
+            <div class="text-white bg-black pl-5 pt-6 pb-9 pr-8 h-full">
+              <h3 class="text-2xl font-semibold text-center">Selected - V</h3>
+              <ol
+                id="selected-players"
+                class="list-decimal flex flex-col gap-2 mt-6 ml-8"
+              >
+            </ol>
+            </div>
+          </div>
+          <!-- Calculate Budget  -->
+          <div class="row-start-2 col-start-4 row-span-6">
+            <div class="text-white bg-black px-6 pt-6 pb-9">
+              <h3 class="text-2xl font-semibold text-center">Budget</h3>
+
+              <div class="mt-6">
+                <label
+                  >Per Player
+                  <input
+                    class="text-white w-32 ml-3 bg-transparent border border-gray-600 py-1 px-2"
+                    type="number"
+                  />
+                </label>
+                <button
+                  class="text-white text-base font-bold bg-sky-800 py-2 w-full mt-5 hover:bg-orange-700"
+                >
+                  Calculate
+                </button>
+                <h3 class="mt-4 font-bold">
+                  Player Expenses <span class="ml-4">$</span><span>5000</span>
+                </h3>
+              </div>
+
+              <div class="mt-7">
+                <label
+                  >Manager
+                  <input
+                    class="text-white w-32 ml-3 bg-transparent border border-gray-600 py-1 px-2"
+                    type="number"
+                  />
+                </label>
+                <label
+                  >Coach
+                  <input
+                    class="text-white w-32 ml-8 mt-4 bg-transparent border border-gray-600 py-1 px-2"
+                    type="number"
+                  />
+                </label>
+                <button
+                  class="text-white text-base font-bold bg-sky-800 py-2 w-full mt-5 hover:bg-orange-700"
+                >
+                  Calculate
+                </button>
+                <h3 class="mt-4">
+                  Total <span class="ml-32 text-red-600 font-bold">$</span
+                  ><span class="font-bold text-red-600">1000</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side bar start  -->
+
+          <!-- Players boxes start  -->
+          <!-- box  1-->
+          <div class="text-center border border-gray-600">
+            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <div class="p-5">
+              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <div class="text-neutral-400 pt-2">
+                <span>36 Goals . </span>
+                <span>120 Assist</span>
+              </div>
+              <button
+                class="select-btn | text-white text-base font-bold bg-sky-800 py-3 w-full mt-5 hover:bg-orange-700"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <!-- box end  -->
+          <!-- box  -->
+          <div class="text-center border border-gray-600">
+            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <div class="p-5">
+              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <div class="text-neutral-400 pt-2">
+                <span>36 Goals . </span>
+                <span>120 Assist</span>
+              </div>
+              <button
+                class="select-btn | text-white text-base font-bold bg-sky-800 py-3 w-full mt-5 hover:bg-orange-700"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <!-- box end  -->
+          <!-- box  -->
+          <div class="text-center border border-gray-600">
+            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <div class="p-5">
+              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <div class="text-neutral-400 pt-2">
+                <span>36 Goals . </span>
+                <span>120 Assist</span>
+              </div>
+              <button
+                class="select-btn | text-white text-base font-bold bg-sky-800 py-3 w-full mt-5 hover:bg-orange-700"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <!-- box end  -->
+          <!-- box  -->
+          <div class="text-center border border-gray-600">
+            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <div class="p-5">
+              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <div class="text-neutral-400 pt-2">
+                <span>36 Goals . </span>
+                <span>120 Assist</span>
+              </div>
+              <button
+                class="select-btn | text-white text-base font-bold bg-sky-800 py-3 w-full mt-5 hover:bg-orange-700"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <!-- box end  -->
+          <!-- box  -->
+          <div class="text-center border border-gray-600">
+            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <div class="p-5">
+              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <div class="text-neutral-400 pt-2">
+                <span>36 Goals . </span>
+                <span>120 Assist</span>
+              </div>
+              <button
+                class="select-btn | text-white text-base font-bold bg-sky-800 py-3 w-full mt-5 hover:bg-orange-700"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <!-- box end  -->
+          <!-- box  -->
+          <div class="text-center border border-gray-600">
+            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <div class="p-5">
+              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <div class="text-neutral-400 pt-2">
+                <span>36 Goals . </span>
+                <span>120 Assist</span>
+              </div>
+              <button
+                class="select-btn | text-white text-base font-bold bg-sky-800 py-3 w-full mt-5 hover:bg-orange-700"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <!-- box end  -->
+          <!-- box  -->
+          <div class="text-center border border-gray-600">
+            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <div class="p-5">
+              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <div class="text-neutral-400 pt-2">
+                <span>36 Goals . </span>
+                <span>120 Assist</span>
+              </div>
+              <button
+                class="select-btn | text-white text-base font-bold bg-sky-800 py-3 w-full mt-5 hover:bg-orange-700"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <!-- box end  -->
+          <!-- box  -->
+          <div class="text-center border border-gray-600">
+            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <div class="p-5">
+              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <div class="text-neutral-400 pt-2">
+                <span>36 Goals . </span>
+                <span>120 Assist</span>
+              </div>
+              <button
+                class="select-btn | text-white text-base font-bold bg-sky-800 py-3 w-full mt-5 hover:bg-orange-700"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <!-- box end  -->
+          <!-- box  -->
+          <div class="text-center border border-gray-600">
+            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <div class="p-5">
+              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <div class="text-neutral-400 pt-2">
+                <span>36 Goals . </span>
+                <span>120 Assist</span>
+              </div>
+              <button
+                class="select-btn | text-white text-base font-bold bg-sky-800 py-3 w-full mt-5 hover:bg-orange-700"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <!-- box end  -->
+          <!-- Players boxes end  -->
+        </div>
+      </section>
+    </main>
 
     <script src="./js/utilities.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
-
-
