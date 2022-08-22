@@ -18,22 +18,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-zinc-900 px-6">
-    <header class= "container md:mx-auto  bg-black">
-      <div class=" flex justify-between items-center pt-12">
+    <header class="container md:mx-auto bg-black">
+      <div class="flex justify-between items-center md:pt-12">
         <div class="self-end">
           <img class="w-full" src="./image/bg-left.png" alt="" />
         </div>
         <div class="text-center">
-          <h1 class="text-3xl lg:text-4xl xl:text-5xl font-Berkshire bg-hero-pattern">
-            Choose Your Favorite player
+          <h1
+            class="hero-headline text-1xl md:text-5xl xl:text-7xl "
+          >
+            Choose&nbsp;Your&nbsp;Favorite&nbsp;player
           </h1>
-          <p class="text-white text-base md:text-2xl pt-3 lg:pt-8 w-9/12 mx-auto pb-10 md:pb-0">
-            Select the best players you want to see in your team.
-             You only can select maximum five players.
+          <p
+            class="text-white text-sm md:text-2xl pt-0 lg:pt-8 w-9/12 mx-auto pb-10 md:pb-0"
+          >
+            Select the best players you want to see in your team. You only can
+            select maximum five players.
           </p>
         </div>
         <div class="self-end">
-          <img src="./image/Card-psg.svg" alt="" />
+          <img class="hidden md:block" src="./image/Card-psg.svg" alt="" />
           <img src="./image/ball.png" alt="" />
         </div>
       </div>
@@ -45,10 +49,12 @@
           <!-- Right side bar start  -->
           <div class="row-start-1 md:col-start-3 xl:col-start-4">
             <div class="text-white bg-black pl-5 pt-6 pb-9 pr-8 h-full">
-              <h3 class="text-3xl font-semibold text-center">Selected - V</h3>
+              <h3 class="line-mark text-3xl font-semibold text-center">
+                Selected - V
+              </h3>
               <ol
                 id="selected-players"
-                class="list-decimal flex flex-col gap-2 mt-6 ml-8 text-3xl"
+                class="list-decimal flex flex-col gap-2 mt-10 ml-8 text-2xl"
               >
                 <!-- Selected player will be here  -->
               </ol>
@@ -56,12 +62,14 @@
           </div>
           <!-- Calculate Budget  -->
           <div
-            class="row-start-2 col-start-1 md:col-start-3 row-span-6 xl:col-start-4 "
+            class="row-start-2 col-start-1 md:col-start-3 row-span-6 xl:col-start-4"
           >
             <div class="text-white bg-black px-6 pt-6 pb-9">
-              <h3 class="text-3xl font-semibold text-center">Budget</h3>
+              <h3 class="line-mark text-4xl font-semibold text-center">
+                Budget
+              </h3>
 
-              <div class="mt-6">
+              <div class="mt-10">
                 <label class=""
                   >Per Player
                   <input
@@ -122,9 +130,15 @@
           <!-- Players boxes start  -->
           <!-- box  1-->
           <div class="text-center border border-gray-600">
-            <img class="w-full mx-auto" src="./image/Alexander-Arnold.png" alt="" />
+            <img
+              class="w-full mx-auto"
+              src="./image/Alexander-Arnold.png"
+              alt=""
+            />
             <div class="p-5">
-              <h2 class="text-white text-2xl font-extrabold">Alexander Arnold</h2>
+              <h2 class="text-white text-2xl font-extrabold">
+                Alexander Arnold
+              </h2>
               <div class="text-neutral-400 pt-2">
                 <span>36 Goals . </span>
                 <span>120 Assist</span>
@@ -156,9 +170,15 @@
           <!-- box end  -->
           <!-- box  -->
           <div class="text-center border border-gray-600">
-            <img class="w-full mx-auto" src="./image/Cristiano_Ronaldo_2018.jpg" alt="" />
+            <img
+              class="w-full mx-auto"
+              src="./image/Cristiano_Ronaldo_2018.jpg"
+              alt=""
+            />
             <div class="p-5">
-              <h2 class="text-white text-2xl font-extrabold">Cristiano Rolando</h2>
+              <h2 class="text-white text-2xl font-extrabold">
+                Cristiano Rolando
+              </h2>
               <div class="text-neutral-400 pt-2">
                 <span>36 Goals . </span>
                 <span>120 Assist</span>
@@ -173,9 +193,9 @@
           <!-- box end  -->
           <!-- box  -->
           <div class="text-center border border-gray-600">
-            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <img class="w-full mx-auto" src="./image/Benzema.png" alt="" />
             <div class="p-5">
-              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <h2 class="text-white text-2xl font-extrabold">Karim Benzema</h2>
               <div class="text-neutral-400 pt-2">
                 <span>36 Goals . </span>
                 <span>120 Assist</span>
@@ -190,9 +210,13 @@
           <!-- box end  -->
           <!-- box  -->
           <div class="text-center border border-gray-600">
-            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <img
+              class="w-full mx-auto"
+              src="./image/Kylian-Mbappe.jpg"
+              alt=""
+            />
             <div class="p-5">
-              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <h2 class="text-white text-2xl font-extrabold">Kylian Mbappe</h2>
               <div class="text-neutral-400 pt-2">
                 <span>36 Goals . </span>
                 <span>120 Assist</span>
@@ -207,9 +231,9 @@
           <!-- box end  -->
           <!-- box  -->
           <div class="text-center border border-gray-600">
-            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <img class="w-full mx-auto" src="./image/Mo-Salah 1.png" alt="" />
             <div class="p-5">
-              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <h2 class="text-white text-2xl font-extrabold">Mohamed Salah</h2>
               <div class="text-neutral-400 pt-2">
                 <span>36 Goals . </span>
                 <span>120 Assist</span>
@@ -224,9 +248,15 @@
           <!-- box end  -->
           <!-- box  -->
           <div class="text-center border border-gray-600">
-            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <img
+              class="w-full mx-auto"
+              src="./image/Kevin-De-Bruyne.png"
+              alt=""
+            />
             <div class="p-5">
-              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <h2 class="text-white text-2xl font-extrabold">
+                Kevin De Bruyne
+              </h2>
               <div class="text-neutral-400 pt-2">
                 <span>36 Goals . </span>
                 <span>120 Assist</span>
@@ -241,9 +271,13 @@
           <!-- box end  -->
           <!-- box  -->
           <div class="text-center border border-gray-600">
-            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <img
+              class="w-full mx-auto"
+              src="./image/Romelu-Lukaku.jpg"
+              alt=""
+            />
             <div class="p-5">
-              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <h2 class="text-white text-2xl font-extrabold">Romelu Lukaku</h2>
               <div class="text-neutral-400 pt-2">
                 <span>36 Goals . </span>
                 <span>120 Assist</span>
@@ -258,9 +292,9 @@
           <!-- box end  -->
           <!-- box  -->
           <div class="text-center border border-gray-600">
-            <img class="w-full mx-auto" src="./image/messi.png" alt="" />
+            <img class="w-full mx-auto" src="./image/Harry-Kane.png" alt="" />
             <div class="p-5">
-              <h2 class="text-white text-2xl font-extrabold">Lionel Messi</h2>
+              <h2 class="text-white text-2xl font-extrabold">Harry Kane</h2>
               <div class="text-neutral-400 pt-2">
                 <span>36 Goals . </span>
                 <span>120 Assist</span>
