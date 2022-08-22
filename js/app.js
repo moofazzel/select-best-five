@@ -1,3 +1,4 @@
+// select button part 
 document.querySelectorAll(".select-btn").forEach(function (btn) {
   btn.addEventListener("click", function (event) {
     const playerName = this.parentElement.children[0].innerText;
@@ -19,6 +20,7 @@ document.querySelectorAll(".select-btn").forEach(function (btn) {
   });
 });
 
+// player cost part 
 document
   .getElementById("btn-player-cost")
   .addEventListener("click", function () {
@@ -35,6 +37,7 @@ document
     console.log(typeof playerCostField);
   });
 
+  // Total cost calculate part 
 document
   .getElementById("btn-others-cost")
   .addEventListener("click", function () {
@@ -49,5 +52,4 @@ document
     //   set total player cost
     //   set inner text function has two parameter id and value
     setInnerTextById("grand-total-cost", grandTotalCost);
-    console.log(typeof totalPlayerCost);
   });

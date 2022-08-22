@@ -6,13 +6,13 @@ body{
 .hero-headline{
     color: #FF5E19;
     font-family: 'Berkshire Swash', 'cursive';
-    line-height: 100px;
+    line-height: 120px !important;
 }
 
 
 .line-mark{
     background: url(./image/Ureg-Ureg-Marker.svg) no-repeat bottom; 
-    line-height: 70px;
+    line-height: 90px !important;
 }
 
 .disabled{
