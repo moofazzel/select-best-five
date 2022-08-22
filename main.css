@@ -9,20 +9,10 @@ body{
     line-height: 100px;
 }
 
-/* .hero::after{
-    content: '';
-    position: absolute;
-    right: 0%;
-     top: 75px; 
-    width: 210px;
-    height: 30px;
-   
-    z-index: 11;
-} */
 
 .line-mark{
-    background: url(./image/Ureg-Ureg-Marker.svg) no-repeat center bottom; 
-  
+    background: url(./image/Ureg-Ureg-Marker.svg) no-repeat bottom; 
+    line-height: 70px;
 }
 
 .disabled{
@@ -34,7 +24,7 @@ body{
         display: block;
         background: url(./image/Line-Marker.svg) no-repeat bottom right;
         background-size: 150px;
-        line-height: 110px;
+        line-height: 120px;
         
 
     }
