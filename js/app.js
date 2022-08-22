@@ -32,7 +32,7 @@ document
     //   set inner text function has two parameter id and value
     setInnerTextById("total-players-cost", playerCostField);
 
-    console.log(playerCostField);
+    console.log(typeof playerCostField);
   });
 
 document

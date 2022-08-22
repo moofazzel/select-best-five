@@ -1,3 +1,30 @@
+ 
+body{
+    font-family: "Manrope", "sans-serif";
+}
+
+h1{
+    color: #FF5E19;
+    font-family: 'Berkshire Swash', 'cursive';
+    position: relative;
+}
+h1::after{
+    content: '';
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 210px;
+    height: 30px;
+    background: url(./image/Line-Marker.svg) no-repeat;
+}
+
 .disabled{
     background-color: grey !important;
 }
+
+
+@media only screen and (max-width: 1220px) {
+    h1::after{
+        display: none;
+    }
+  }
