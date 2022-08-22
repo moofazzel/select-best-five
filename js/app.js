@@ -23,11 +23,31 @@ document
   .getElementById("btn-player-cost")
   .addEventListener("click", function () {
     const selectedPlayers = document.getElementById("selected-players");
-      const selectedPlayer = selectedPlayers.children.length;
+    const selectedPlayer = selectedPlayers.children.length;
 
-    const playerCostField = getInputValueById("per-player-cost-field") * selectedPlayer;
+    const playerCostField =
+      getInputValueById("per-player-cost-field") * selectedPlayer;
+
+    //   set total player cost
+    //   set inner text function has two parameter id and value
+    setInnerTextById("total-players-cost", playerCostField);
 
     console.log(playerCostField);
   });
 
-// console.log(selectedPlayerParent);
+document
+  .getElementById("btn-others-cost")
+  .addEventListener("click", function () {
+    const totalPlayerCost = parseFloat(
+      document.getElementById("total-players-cost").innerText
+    );
+    const managerCost = getInputValueById("manager-cost-field");
+    const coachCost = getInputValueById("coach-cost-field");
+
+      const grandTotalCost = totalPlayerCost + parseFloat(managerCost) + coachCost;
+      
+    //   set total player cost
+    //   set inner text function has two parameter id and value
+    setInnerTextById("grand-total-cost", grandTotalCost);
+    console.log(typeof totalPlayerCost);
+  });
